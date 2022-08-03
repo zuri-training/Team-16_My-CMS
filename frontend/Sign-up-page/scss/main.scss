@@ -1,0 +1,10 @@
+$primary: #540d6e;
+$secondary: #320842;
+$neutral: #9e8d8d;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+  --bs-body-font-family: "Lato";
+}
