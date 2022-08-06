@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Join Us - Sign up and Start Building Your Website</title>
+    <link
+      href="/images/Vector.png"
+      rel="icon"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <script src="app.js" defer></script>
+  </head>
+  <body class="">
+    <main class="container">
+      <div class="logo w-100 text-center text-md-start my-5">
+        <img src="images/default-logo.svg" alt="" />
+      </div>
+
+      <div
+        class="d-flex justify-content-center align-items-center flex-column mb-5 div"
+      >
+        <form id="form" action="" class="needs-validation" novalidate>
+          <h1 class="h2 text-center">Start designing for free</h1>
+
+          <!-- Form Inputs -->
+          <div class="form-group">
+            <label
+              for="first-name"
+              class="form-label sr-only text-left pb-2 mt-4"
+              >First Name</label
+            >
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              class="form-control input border"
+              placeholder="John"
+              required
+            />
+            <small class="text-danger"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="last-name" class="sr-only text-left pb-2 mt-3"
+              >Last Name</label
+            >
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              class="form-control input"
+              placeholder="Doe"
+              required
+            />
+            <small class="text-danger"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="sr-only text-left pb-2 mt-3">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control email input"
+              placeholder="Enter email address"
+              required
+            />
+            <small class="text-danger"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="sr-only text-left pb-2 mt-3"
+              >Password</label
+            >
+
+            <div class="password_input">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control input psw"
+                placeholder="Enter password"
+                required
+              />
+              <i class="bi bi-eye-slash" id="visibilitybtn"></i>
+              <small class="text-danger"></small>
+            </div>
+            <!-- <img
+              src="/node_modules/bootstrap-icons/icons/ey"
+              alt=""
+            /> -->
+          </div>
+
+          <div class="form-group">
+            <label for="confirm_password" class="sr-only text-left pb-2 mt-3"
+              >Confirm Password</label
+            >
+            <div class="password_input">
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+                class="form-control input psw"
+                placeholder="Enter password"
+                required
+              />
+              <i class="bi bi-eye-slash" id="visibilitybt"></i>
+              <small class="text-danger"></small>
+            </div>
+          </div>
+
+          <div class="form_info">
+            <div class="d-flex flex-row mt-3 form_info_flex">
+              <div class="me-3 me-md-5">
+                <div
+                  class="d-flex flex-row align-items-center justify-content-between form_info_text"
+                >
+                  <div class="dot"></div>
+                  <p>A minimum of 10 characters</p>
+                </div>
+                <div
+                  class="d-flex flex-row align-items-center justify-content-between form_info_text"
+                >
+                  <div class="dot"></div>
+                  <p>At least one lowercase letter</p>
+                </div>
+              </div>
+              <div class="ms-5">
+                <div class="d-flex flex-row align-items-center form_info_text">
+                  <div class="dot"></div>
+                  <p class="ms-2">At least one number</p>
+                </div>
+                <div
+                  class="d-flex flex-row align-items-center justify-content-between form_info_text"
+                >
+                  <div class="dot"></div>
+                  <p>At least one uppercase letter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <label for="myCheckboxId" class="checkbox mt-3"
+            ><input
+              type="checkbox"
+              name="myCheckboxName"
+              id="myCheckboxId"
+              class="checkbox_input"
+              value="yes"
+              required
+            />
+            <div class="checkbox_box me-2"></div>
+            <small class="sign-up">
+              Signing up for an account means you agree to the Privacy Policy
+              <br />
+              and Terms of Service.
+            </small>
+          </label>
+
+          <button
+            class="btn btn-lg btn-block text-light mt-3"
+            type="submit"
+            style="background-color: #540d6e"
+          >
+            Create Account
+          </button>
+        </form>
+
+        <p class="mt-3 p-text">
+          Already have an account?
+          <a href="#" class="text-primary text-decoration-none">Sign in</a>
+        </p>
+      </div>
+    </main>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
