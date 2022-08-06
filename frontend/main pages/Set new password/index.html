@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Lato" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <title>Set Password</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="images/default-monochrome-black.svg" />
+    </div>
+    <div class="content">
+      <form action="#" id="form">
+        <div class="user-details">
+          <div class="set">
+            <h2>Set new password</h2>
+            <p id="message" style="text-align: center; color: #19b500"></p>
+          </div>
+          <div class="input-box">
+            <label for="new password">Password</label>
+            <div style="position: relative">
+              <input type="password" name="password" id="password" required />
+              <i
+                style="visibility: visible; cursor: pointer"
+                class="show bi bi-eye"
+                onclick="toggle()"
+              ></i>
+              <i
+                style="cursor: pointer; visibility: hidden"
+                class="bi bi-eye-slash"
+                onclick="toggle()"
+              ></i>
+            </div>
+          </div>
+
+          <!--confirm password code-->
+          <div class="input-box">
+            <label for="confirm password">Confirm Password</label>
+            <div style="position: relative">
+              <input
+                type="password"
+                name="Confirm Password"
+                id="confirm"
+                required
+              />
+              <i
+                style="visibility: visible; cursor: pointer"
+                class="show bi bi-eye"
+                onclick="toggle()"
+              ></i>
+              <i
+                style="cursor: pointer"
+                class="hide bi bi-eye-slash"
+                onclick="toggle()"
+              ></i>
+            </div>
+          </div>
+          <!--Instructions-->
+          <div class="below">
+            <div class="instruction1">
+              <ul>
+                <li>A minimum of 10 characters</li>
+                <li>At least one lowercase letter</li>
+              </ul>
+            </div>
+            <div class="instruction1">
+              <ul>
+                <li>At least one number</li>
+                <li>At least one uppercase letter</li>
+              </ul>
+            </div>
+          </div>
+          <!--Button-->
+          <div class="savebtn">
+            <button type="submit">
+              <p style="margin-top: 13px">Save</p>
+            </button>
+            <p class="terms">Go back to <a href="#"> Log In</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--JavaScript stuffs-->
+    <script>
+      let message;
+
+      const form = document.getElementById("form");
+      const password = document.getElementById("password");
+      const confirm = document.getElementById("confirm");
+      let state = false;
+      let show = document.getElementById("show");
+      let hide = document.getElementById("hide");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        checkInputs();
+      });
+
+      function checkInputs() {
+        //get values
+        const passwordValue = password.value.trim();
+        const confirmValue = confirm.value.trim();
+
+        if (passwordValue === "" && confirmValue == "") {
+          setMessage(true, "Password can't be blank");
+        } else if ((passwordValue == confirmValue) == false) {
+          setMessage(true, "Password not match");
+        } else if (passwordValue.length <= 8 && confirmValue.length <= 8) {
+          setMessage(
+            true,
+            "Password length must be above 8 characters and Password not match"
+          );
+        } else if (passwordValue.length <= 8 && confirmValue.length <= 8) {
+          setMessage(true, "Password length must be above 8 characters");
+        } else {
+          setMessage(false, "Password Match");
+        }
+      }
+      function setMessage(isError, message) {
+        if (isError) {
+          document.getElementById("message").innerHTML = message;
+          document.getElementById("message").style.color = "#e10000";
+          document.getElementById("password").style.borderColor = "#e10000";
+          document.getElementById("confirm").style.borderColor = "#e10000";
+        } else {
+          document.getElementById("message").style.color = "#19b500";
+          document.getElementById("message").innerHTML = message;
+          document.getElementById("password").style.borderColor = "#19b500";
+          document.getElementById("confirm").style.borderColor = "#19b500";
+        }
+      }
+      function toggle() {
+        if (state) {
+          document.getElementById("password").setAttribute("type", "password");
+          document.getElementById("confirm").setAttribute("type", "password");
+          state = false;
+        } else {
+          document.getElementById("password").setAttribute("type", "text");
+          document.getElementById("confirm").setAttribute("type", "text");
+          state = true;
+        }
+      }
+    </script>
+  </body>
+</html>
+<div style="position: relative"></div>
