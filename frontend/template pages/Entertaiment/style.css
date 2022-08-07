@@ -3,10 +3,12 @@ body {
   font-family: "Lato", sans-serif;
   max-width: 100%;
 }
+
 .trailers_image_sizing {
   height: 500px;
-  width: 320px;
+  width: 95%;
 }
+
 .trailer_header{
   transition: 0.5s;
 }
@@ -19,6 +21,24 @@ body {
 .trailer_header_container {
   margin-top: 30px;
   margin-bottom: 25px;
+}
+
+.trailer_card {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+
+  justify-self: center;
+}
+
+.trailer_text {
+  gap: 15%;
+}
+
+.trailer_icon {
+  height: 12px;
+  width: 15px;
+  padding-right: 7px;
 }
 
 .top-movies-body {
@@ -37,6 +57,11 @@ body {
 .top-movies-image{
     padding-top: 90px;
     width: 20%;
+}
+
+.top-movies-image:hover {
+  transform: translatey(-75px);
+  transition: top ease 0.5s;
 }
 
 .latest-news-container {
