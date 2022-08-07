@@ -1,0 +1,78 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h5 {
+    font-weight: 800;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+.input {
+    width: 400px;
+    height: 60px;
+}
+
+.subscribe-section {
+    background: url(img/Newsletter-Banner.png);
+    background-size: cover;
+    height: 446px;
+}
+
+.places-section {
+    margin-top: 8em;
+}
+
+.places-section .img_1 {
+    width: 100%;
+}
+
+.flex-item p {
+    color: #F2994A;
+}
+
+.video-section {
+    margin-top: 8rem;
+}
+
+.video-section .img_2 {
+    width: 100%;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper .play {
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
+
+.img-wrapper .ellipse {
+    position: absolute;
+    top: 39%;
+    left: 40%;
+}
+
+footer {
+    min-height: 237px;
+    margin-top: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 30%;
+    }
+    
+    .footer-text {
+        width: 70%;
+    }
+}
+
