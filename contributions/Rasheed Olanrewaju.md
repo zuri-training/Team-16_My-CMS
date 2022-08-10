@@ -7,4 +7,5 @@ Link to the issue: https://github.com/zuri-training/Team-16_My-CMS/issues/2
 Link to the issue: https://github.com/zuri-training/Team-16_My-CMS/issues/24
 
 
-###### I worked on linking of pages together and placeholder hosting on vercel for review.  check via https://cms-team16.vercel.app/
+###### I worked on linking of pages together and placeholder hosting on vercel for review
+check via: https://cms-team16.vercel.app/
