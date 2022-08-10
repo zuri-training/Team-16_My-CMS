@@ -4,6 +4,6 @@
 
 ### The following are my contributions
 
-<https://github.com/zuri-training/Team-16_My-CMS/issues/5>
+issue <https://github.com/zuri-training/Team-16_My-CMS/issues/5> finished work<https://github.com/zuri-training/Team-16_My-CMS/tree/sub-main/frontend/main%20pages/sign-in>
 
-<https://github.com/zuri-training/Team-16_My-CMS/issues/23>
+issue <https://github.com/zuri-training/Team-16_My-CMS/issues/23> finished work<https://github.com/zuri-training/Team-16_My-CMS/tree/sub-main/frontend/template%20pages/Portfolio%20>
