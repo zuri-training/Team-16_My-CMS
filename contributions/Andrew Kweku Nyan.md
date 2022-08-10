@@ -4,3 +4,5 @@ here is the link to the task https://github.com/zuri-training/Team-16_My-CMS/tre
 
 I have also built the Blog Template Page alongside @Buchman and @Hadizat
 here is the link to that task and issue https://github.com/zuri-training/Team-16_My-CMS/tree/sub-main/frontend/template%20pages/Blog
+
+resolved #issue21 https://github.com/zuri-training/Team-16_My-CMS/issues/21
