@@ -28,8 +28,10 @@ a {
  
 .nav-item .nav-link {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   color: #343a40;
+  text-align: center;
+  float: left;
 }
 .navbar-logo {
   margin-bottom: 0px;
@@ -53,7 +55,7 @@ a {
   transition: all 0.3s;
   background-color: transparent !important;
   padding: 6px 0;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .navbar-logo .navbar-nav li .nav-link {
   padding-right: 0px;
@@ -106,6 +108,9 @@ a {
 }
 .navbar-toggler:focus {
   outline: none;
+}
+.search-container{
+  float: right;
 }
 /*-------Navbar end------*/
 
@@ -277,10 +282,9 @@ p {
   height: 60px;
 }
 
-.bg-no-overlay{
-  background:url(img/Newsletter-Banner.png);
+.bg{
+  background-image:url(img/Newsletter-Banner.png);
   background-size: cover;
-  height: 446px;
   background-repeat: no-repeat;
   background-position: center center;
   color: #000000;
@@ -338,4 +342,3 @@ footer {
       width: 70%;
   }
 }
-
