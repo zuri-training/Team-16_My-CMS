@@ -1,4 +1,4 @@
-I contributed to the development of the WebFlux CMS Homepage together with my fellow developers:@Blaqkulture, @ViktohBlake and @Oluwa
+I contributed to the development of the WebFlux CMS Homepage together with my fellow developers:@Blaqkulture, @ViktohBlake and @Olanrewajurasheed
 here is the link to the task https://github.com/zuri-training/Team-16_My-CMS/tree/sub-main/frontend/main%20pages/cms_landing
 
 
