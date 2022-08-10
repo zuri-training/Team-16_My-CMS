@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Blog Template Page Theme</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
+    <!-- CSS & JS -->
+   
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+ <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js”></script>
+ <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js”></script>
     <link rel="stylesheet" href="/CSS/all.css" />
     <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="CSS/style.css" rel="stylesheet" type="text/css" />
@@ -14,7 +17,7 @@
 <body>
     <!-- Header Section -->
 <header>
-    <nav class="navbar navbar-expand-lg  bg-transparent">
+    <nav class="navbar navbar-expand-lg  fixed-top bg-transparent">
         <div class="container">
             <a class="navbar-brand logo" href="">
                 <img src="images/Logo.png" height="21">
@@ -41,8 +44,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACT ME</a>
                     </li>
-                </ul>
-                
+                    <li class="search-container"> 
+                      <form >
+                        <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="search">
+                        
+                       </form>
+                      </li>
+                    </ul>
             </div>
         </div>
     </nav>
@@ -58,7 +66,8 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/images/background1.png" class="d-block w-100" alt="...">
+               <div class="bg-image" style="background-image:url(images/background1.png); height:100vh;"
+                class="img-fluid" class="img-responsive"  ></div>
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Hi I'm Blake Pascal</h1>
          <h1>I love to travel, take nice photos and write about Lifestyle and the places I explore</h1>  
@@ -119,11 +128,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             <div class="row">
                 <div class="col-md-4 col-lg-4">
                     <div class="bg-image hover-overlay ripple">
-                            <img src="images/travel.png" class="img-fluid" alt="thumbnail"/>
-                            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                            <img src="images/travel.png" class="img-fluid shadow-2-strong" alt="thumbnail"/>
+                            
                             </div>
                         </div>
-                </div>
+                
                         
 
                         
@@ -131,18 +140,16 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           
          <div class="col-md-4 col-lg-4">
             <div class="bg-image hover-overlay ripple">
-              <img src="images/lifestyle.png" class="img-fluid" alt="thumbnail"/>
-              <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+              <img src="images/lifestyle.png" class="img-fluid shadow-2-strong"  alt="thumbnail"/>
                 </div>  
             </div>
-                  </div>
+                  
                 
 
       
      <div class="col-md-4 col-lg-4">
         <div class="bg-image hover-overlay ripple ">
-              <img src="images/photo.png" class="img-fluid" alt="thumbnail"/>
-              <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+              <img src="images/photo.png" class="img-fluid shadow-2-strong" alt="thumbnail"/>
             </div> 
             </div>
                 </div>
@@ -210,6 +217,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         aliqua dolor do amet sint velit officia
                          consequat duis enim Amet minim mollit 
                         non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                        <a href="#" class="btn btn-light">Read More</a>
                 </section>
                 <!----- end post content-->
             </div>
@@ -294,6 +302,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 <!------popular section end-->
 
                 <!-----recommended section-->
+                
 
  <section class="feature gradient">
       <div class="container">
@@ -315,6 +324,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                               duis enim Amet minim mollit 
                               non deserunt ullamco est sit aliqua dolor do amet sint. 
                               </p>
+                               <a href="#" class="btn btn-light">Read More</a>
                               </div>
                         </div>
                         <div class="col-md-4">
@@ -332,6 +342,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                               est sit aliqua dolor do amet sint velit officia consequat 
                               duis enim Amet minim mollit 
                               non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                              <a href="#" class="btn btn-light">Read More</a>
                       </div>
                   </div>
                         <div class="col-md-4">
@@ -345,6 +356,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         <p>For anyone traveling to Korea, and Asia in general, 
                           this is the one blog post that should not be missed. 
                           My experience of Korea Towns is somewhat unique...</p>
+                          <a href="#" class="btn btn-light">Read More</a>
                       </div>
                         </div>
                         
@@ -362,6 +374,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                               est sit aliqua dolor do amet sint velit officia consequat 
                               duis enim Amet minim mollit 
                               non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                              <a href="#" class="btn btn-light">Read More</a>
                 </div>
               </div>
                         <div class="col-md-4">
@@ -379,6 +392,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                               est sit aliqua dolor do amet sint velit officia consequat 
                               duis enim Amet minim mollit 
                               non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                              <a href="#" class="btn btn-light">Read More</a>
                       </div>
                         </div>
                         <div class="col-md-4">
@@ -392,6 +406,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             <p>For anyone traveling to Korea, and Asia in general, 
                               this is the one blog post that should not be missed. 
                               My experience of Korea Towns is somewhat unique...</p>
+                              <a href="#" class="btn btn-light">Read More</a>
                           </div>
                         </div>
 
@@ -400,36 +415,34 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </div>
                   </section>
                 <!----recommended section end-->
+                
 
                 <!--------------subscribe section-->
                 
-                <div
-                class="subscribe-section container-fluid d-flex flex-column align-items-center justify-content-center"
-              > <div class="container bg-no-overlay">
+                <div class="subscribe-section d-flex flex-column align-items-center justify-content-center">
+                <div class="container-fluid">
+                <div class="row">
+                  <div  class="bg-image d-flex flex-column align-items-center justify-content-center"
+                   style="background-image: url(img/Newsletter-Banner.png); 
+                   height:350px;" class="img-fluid" class="img-responsive">
+                
             
                 <h1 class="text-center text-bold">Subscribe to Newsletter</h1>
                 <p class="text-capitalize text-center">
-                  be the first to receive monthly updates from the us, sign up to stay in
-                  the loop
-                </p>
-                <form
-                  action=""
-                  class="container d-flex flex-wrap justify-content-center gap-4"
-                >
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    class="form-control input rounded-0"
-                  />
+                  be the first to receive monthly updates from the us,
+                   sign up to stay in the loop</p>
+
+                <form action="#" class="container d-flex flex-wrap justify-content-center gap-4">
+                  <input type="text" placeholder="Your Name" class="form-control input rounded-0"/>
                   <input
                     type="email"
                     placeholder="Enter Email Address"
                     class="form-control input rounded-0"
                   />
                   <button class="btn btn-dark btn-lg rounded-0 px-5">SUBSCRIBE</button>
-                </form>
+                </form></div>
               </div>
-              
+              </div>
               </div>
           
               <div class="places-section container">
