@@ -30,7 +30,7 @@ Template which allows users to edit,format content of the site to suit their wor
 - Frontend: HTML, CSS, Javascript
 - Backend:  Python(Django), Javascript
 
-# For Deployment
+# To run our project
 Step 1:
 Clone this this repository or download the zip file of this project
 ```
@@ -42,9 +42,9 @@ and download unzip the project using any unzipping software.
 Unzip into any directory in your PC and get access to the files
 
 Step 2:
-Create a Virtual environment and activate it
+Create a virtual environment and activate it
 ```
-py -3 -m venv env
+$ py -3 -m venv env
 $ env\Scripts\activate
 ```
 Step 3:
@@ -53,9 +53,9 @@ Install dependencies
 (env)$ pip install -r requirements.txt
 ```
 Step 4:
-After downloading dependencies,makemigration and migrate 
+After downloading dependencies, make migrations and migrate 
 ```
-$ cd web_flux_cms
+(env)$ cd web_flux_cms
 (env)$ python manage.py makemigrations
 (env)$ python manage.py migrate
 ```
