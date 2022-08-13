@@ -30,7 +30,7 @@ Template which allows users to edit,format content of the site to suit their wor
 - Frontend: HTML, CSS, Javascript
 - Backend:  Python(Django), Javascript
 
-# For Deployment
+# To run our project
 Step 1:
 Clone this this repository or download the zip file of this project
 ```
