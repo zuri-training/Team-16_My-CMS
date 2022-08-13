@@ -42,7 +42,7 @@ and download unzip the project using any unzipping software.
 Unzip into any directory in your PC and get access to the files
 
 Step 2:
-Create a Virtual environment and activate it
+Create a virtual environment and activate it
 ```
 $ py -3 -m venv env
 $ env\Scripts\activate
@@ -53,7 +53,7 @@ Install dependencies
 (env)$ pip install -r requirements.txt
 ```
 Step 4:
-After downloading dependencies,makemigration and migrate 
+After downloading dependencies, make migrations and migrate 
 ```
 (env)$ cd web_flux_cms
 (env)$ python manage.py makemigrations
