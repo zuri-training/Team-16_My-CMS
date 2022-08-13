@@ -29,3 +29,38 @@ Template which allows users to edit,format content of the site to suit their wor
 ## Stacks/Language
 - Frontend: HTML, CSS, Javascript
 - Backend:  Python(Django), Javascript
+
+# For Deployment
+Step 1:
+Clone this this repository or download the zip file of this project
+```
+$ git clone https://github.com/zuri-training/Team-16_My-CMS
+$ cd WebFlux
+```
+For the other process download the zipped file,
+and download unzip the project using any unzipping software.
+Unzip into any directory in your PC and get access to the files
+
+Step 2:
+Create a Virtual environment and activate it
+```
+py -3 -m venv env
+$ env\Scripts\activate
+```
+Step 3:
+Install dependencies
+```
+(env)$ pip install -r requirements.txt
+```
+Step 4:
+After downloading dependencies,makemigration and migrate 
+```
+$ cd web_flux_cms
+(env)$ python manage.py makemigrations
+(env)$ python manage.py migrate
+```
+Step 5 :
+Run code and test
+```
+(env)$ python manage.py runserver
+```
