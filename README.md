@@ -44,7 +44,7 @@ Unzip into any directory in your PC and get access to the files
 Step 2:
 Create a Virtual environment and activate it
 ```
-py -3 -m venv env
+$ py -3 -m venv env
 $ env\Scripts\activate
 ```
 Step 3:
@@ -55,7 +55,7 @@ Install dependencies
 Step 4:
 After downloading dependencies,makemigration and migrate 
 ```
-$ cd web_flux_cms
+(env)$ cd web_flux_cms
 (env)$ python manage.py makemigrations
 (env)$ python manage.py migrate
 ```
