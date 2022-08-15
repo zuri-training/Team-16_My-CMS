@@ -1,0 +1,94 @@
+body{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-size:14px ;
+}
+header a:hover{
+    text-decoration: none;
+}
+.modal-header{
+    border-bottom: none;
+}
+.log{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+}
+label{ 
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.my-btn{
+    background-color: #540D6E;
+    color: #f9f9f9;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.my-btn:hover{
+    background-color: #320842;
+    color: #f9f9f9;
+
+}
+input[type=password]::-ms-reveal,input[type=password]::-ms-clear{
+    display:none;
+}
+.my-btn:active{
+    background-color: #430A58;
+}
+.my-input{
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #B7B7B7;
+    color: #6E6E6E;
+}
+
+.eye{
+    position: relative;
+}
+.eye svg{
+    position: absolute;
+    right:16px;
+    top: 50%;   
+    cursor: pointer;
+    transform: translate(0,-50%);
+}
+
+.pass{
+    letter-spacing: 0.1ch;
+}
+
+.my-input:focus{
+    box-shadow: none;
+    border: 2px solid #9747FF;
+}
+
+.empty{
+    border:2px solid red;
+    background-color: white;
+}
+.error{
+    color: red;
+}
+.forgot{
+    background-color: white;
+    border: none;
+    
+}
+a{
+    text-decoration: none;
+}
+
+a:hover,.forgot:hover{
+    text-decoration: underline;
+}
+
+.grey-text{
+    color: #9E8D8D;
+}
+.purple-text, .purple-text:hover{
+    color: #3F0A53;
+}

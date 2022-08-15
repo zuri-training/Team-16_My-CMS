@@ -22,13 +22,8 @@ body {
     padding: 32px 120px;
     right: 0;
     top: 0;
-/*    width: 100%;*/
-    /*width: 100%;*/
 }
 
-.logocion {
-
-}
 
 .logoicon {
     /*color: #FFFFFF;*/
@@ -178,7 +173,9 @@ main {
     font-weight: 700;
     flex: none;
     order: 0;
-    flex-grow: 0;    
+    flex-grow: 0;
+    margin-bottom: 5px;
+    margin-top: 220px;
 }
 
 .toptext {
@@ -192,6 +189,10 @@ main {
     height: 54px;
 }
 
+.questions {
+    margin: 0;i
+    padding: 0;
+}
 
 .questions input {
     background: #EEE7F1;
@@ -202,7 +203,7 @@ main {
     line-height: 24px
     font-size: 16px;
     font-weight: 500;
-    height: 64px;
+    height: 40px;
     outline-color: #540D6E;
     padding: 20px;
     width: 794px;
@@ -233,92 +234,101 @@ main {
 }
 
 .itemone {    
-    background: #EEE7F1;
-    border-radius: 8px;
-    color: #6E6E6E;
+    cursor: pointer;
     font-family:  "Lato", sans-serif;
     font-style: normal;
-    font-size: 16px;
     font-weight: 500;
     height: 54px;
     /*justify-content: center;*/
     gap: 104px;
     line-height: 24px;
-    padding: 15px 0;
+    padding: 0;
     text-align: center;
-    width: 184px;
 } 
 
-.itemone p{
-    /*height: 24px;
-    width: 70px;*/
+.itemone button{
+    background: #EEE7F1;
+    border: 0px;
+    border-radius: 8px;
+    color: #6E6E6E;
+    cursor: pointer;
+    font-size: 16px;
+    height: 54px;
+    width: 184px;
 }
 
 .itemtwo {
     align-items: center;
-    background: #54006E;
-    border-radius: 8px;
-    color: #FFFFFF;
+    cursor: pointer;
     font-family:  "Lato", sans-serif;
     font-style: normal;
-    font-size: 16px;
     font-weight: 500;
     height: 54px;
     /*justify-content: center;*/
     gap: 104px;
     line-height: 24px;
-    padding: 15px 0;
+    padding: 0;
     text-align: center;
-    width: 184px;
 }
 
-.itemtwo p{
-    /*height: 24px;
-    width: 43px;*/
+.itemtwo button{
+    background: #54006E;
+    border: 0px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    height: 54px;
+    width: 184px;
 } 
 
 .itemthree {
-    background: #EEE7F1;
-    border-radius: 8px;
-    color: #6E6E6E;
+    cursor: pointer;
     font-family:  "Lato", sans-serif;
     font-style: normal;
-    font-size: 16px;
     font-weight: 500;
     height: 54px;
     /*justify-content: center;*/
     gap: 104px;
     line-height: 24px;
-    padding: 15px 0;
+    padding: 0;
     text-align: center;
+    
+}
+
+.itemthree button{
+    background: #EEE7F1;
+    border: 0px;
+    border-radius: 8px;
+    color: #6E6E6E;
+    cursor: pointer;
+    font-size: 16px;
+    height: 54px;
     width: 184px;
 }
 
-.itemthree p{
-    /*height: 24px;
-    width: 132px;*/
-}
-
 .itemfour {
-    background: #EEE7F1;
-    border-radius: 8px;
-    color: #6E6E6E;
+    cursor: pointer;
     font-family:  "Lato", sans-serif;
     font-style: normal;
-    font-size: 16px;
     font-weight: 500;
-    height: 54px;
+    /*height: 54px;*/
     /*justify-content: center;*/
     gap: 104px;
     line-height: 24px;
-    padding: 15px 0;
-    text-align: center;
-    width: 184px;  
+    padding: 0;
+    text-align: center;  
 }
 
-.itemfour p{
-    /*height: 24px;
-    width: 90px;*/
+.itemfour button{
+    background: #EEE7F1;
+    border: 0px;
+    border-radius: 8px;
+    color: #6E6E6E;
+    cursor: pointer;
+    font-size: 16px;
+    height: 54px;
+    width: 184px;
 }
 
 .changelater {

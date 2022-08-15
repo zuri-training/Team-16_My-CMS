@@ -9,16 +9,16 @@
 	</head>
 	<body>
 		<header>
-<!-- Navigation bar -->
+			<!-- Navigation bar -->
 			<div class="nav">
 
-<!-- Logo in Header -->
+				<!-- Logo in Header -->
 				<a class="Logo" href="index.html">
 					<div class="logoicon">
 						<img src="Logo.png" width="150px">
 					</div>
 				</a>
-<!-- Four items in the navbar -->
+				<!-- Four items in the navbar -->
 				<div class="menus">
 					<div class="navitemone">
 						<label>Products</label>
@@ -33,7 +33,7 @@
 						<label>Support</label>
 					</div>
 				</div>
-<!-- Log in button and Language options  -->
+				<!-- Log in button and Language options  -->
 				<nav class="rightbutton">
 					<button class="login">Log in</button>
 					<select class="en">
@@ -46,26 +46,26 @@
 		</header>
 
 		<main>
-<!-- Main headding in page -->
+			<!-- Main headding in page -->
 			<h4 class="headerone">KICKSTART FROM RECOMMENDED <br> TEMPLATES</h4>
 			<p class="toptext">By answering some few questions, we can help you choose the right templates <br> for what you want to create</p>
 
 			<div class="questions">
-				<input type="text" name="" placeholder="What kind of website do you wish to build?">
+				<input type="text" id="my_field" placeholder="What kind of website do you wish to build?">
 				<p class="suggestions">SUGGESTIONS</p>
-<!-- Four suggestion options -->
+				<!-- Four suggestion options -->
 				<div class="options">
-					<div class="itemone">
-           				<p>FASHION</p>
+					<div class="itemone" onclick="fashion()">
+						<button onclick="fashion()">FASHION</button>
            			</div>
-           			<div class="itemtwo">
-           				<p>BLOG</p>
+           			<div class="itemtwo" onclick="blog()">
+						<button onclick="blog()">BLOG</button>
            			</div>
-           			<div class="itemthree">
-           				<p >ENTERTAINMENT</p>
+           			<div class="itemthree" onclick="entertainment()">
+						<button onclick="entertainment()">ENTERTAINMENT</button>
            			</div>
-           			<div class="itemfour">
-           				<p>PORTFOLIO</p>
+           			<div class="itemfour" onclick="portfolio()">
+						<button onclick="portfolio()">PORTFOLIO</button>
          			</div>
          		</div>
          		<div>
@@ -77,7 +77,7 @@
 
 				<div id="topdiv">
         			<h3> YOU ARE SET TO GO! </h3>
-<!-- Sign Up button -->
+					<!-- Sign Up button -->
     			    <button class="signup">
     					Sign Up to start editing your website
     				</button>
@@ -86,13 +86,11 @@
 		</main>
 
 		<footer>
-<!-- Left porion of the footer contianing logo, text and Store images-->
+			<!-- Left porion of the footer contianing logo, text and Store images-->
 			<div dir="special" class="footer">
 	        	<div class="firstdiv">
 	        			<p class="logoicon">
 	        				<img src="Logo.png"id="navlogo" width="150px">
-<!-- 			            <img id="navlogo" src="Logo Icon.png">
-							<img id="navname" src="Logo Name.png"> -->
 			            </p>
 			            <p class="lorem">Lorem ipsum dolor sit amet consectetur	adipisicing elit. A reprehenderit reiciendis alias perferendis, dicta sit repudiandae accusamus explicabo. Officia, quaerat ipsam. Officiis, sint</p>
 			            <p class="playstore">
@@ -101,7 +99,7 @@
 			            </p>
 	        		</div>
 
-<!-- Middle Section of the footer containing 3 item list and SM icons -->
+				<!-- Middle Section of the footer containing 3 item list and SM icons -->
 	        	<div class="seconddiv">
 	        		<div class="thirdtext">
 		            	<p>
@@ -125,7 +123,7 @@
 	            	</div>
 	        	</div>
 
-<!-- Lists by the right of the footer -->
+				<!-- Lists by the right of the footer -->
 	        	<div class="thirddiv">
 	            	<p>
 	                	<a href="" class="lists">Company</a>
@@ -148,5 +146,24 @@
         		</div>
     		</div>
     	</footer>
+
+    	<script>
+			function fashion(){
+			var txt = "FASHION";
+			document.getElementById("my_field").value = txt;
+		}
+		function blog(){
+			var txt = "BLOG";
+			document.getElementById("my_field").value = txt;
+		}
+		function entertainment(){
+			var txt = "ENTERTAINMENT";
+			document.getElementById("my_field").value = txt;
+		}
+		function portfolio(){
+			var txt = "PORTFOLIO";
+			document.getElementById("my_field").value = txt;
+		}
+		</script>
 	</body>
 </html>

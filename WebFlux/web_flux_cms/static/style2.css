@@ -1,0 +1,549 @@
+/* GENERAL CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato';
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+width: 7px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+background: rgba(84, 13, 110, 0.3); 
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+background: rgb(102, 119, 155); 
+border-radius: 5px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+/* NAV AND FRONT SECTION 1 START */
+
+header {
+  padding: 20px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul {
+  margin: 0 !important
+}
+
+nav.header-main ul li {
+  display: inline-flex;
+  padding: 15px;
+}
+
+nav.header-main ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav.header-main ul li a:hover {
+  color: rgb(226, 226, 226);
+}
+
+.header-main {
+  margin: 0 auto;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  line-height: normal;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header a:hover {
+  color: white;
+}
+
+.background-image {
+  background-image: linear-gradient(
+rgba(84, 13, 110, 0.3),
+rgba(0, 0, 0, 0.7)
+  ), url("images/bruce-mars-landing.jpg");
+  background-size:cover;
+  height: 900px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .background-image {
+    background-image: linear-gradient(
+  rgba(84, 13, 110, 0.3),
+  rgba(0, 0, 0, 0.7)
+    ), url("images/bruce-mars-landing.jpg");
+    background-size:cover;
+    height: 1068px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.background-content {
+  text-align: center;
+  color: white;
+  margin-bottom: 20%;
+}
+
+.background-content h1 {
+  font-size: 50px;
+}
+
+@media (max-width: 1200px) {
+  .background-content {
+    text-align: center;
+    color: white;
+    margin-bottom: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .background-content {
+    text-align: center;
+    color: white;
+    margin-bottom: 40%;
+  }
+}
+
+.login-btn {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  font-size: 16px;
+  padding: 15px 25px 15px 25px;
+  border-radius: 10px;
+}
+
+.get-started-btn {
+  background-color: #540D6E;
+  color: white;
+  padding: 15px 25px 15px 25px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 62px 81px;
+  gap: 24px;
+  position: absolute;
+  top: 600px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .rectangle {
+    padding: 0px !important;
+    top: 650px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+  }
+}
+
+
+.box{
+  /* Auto layout */
+display:flex;
+align-items: center;
+gap: 60px;
+}
+
+@media (max-width: 900px) {
+  .box{
+    display:contents;
+  align-items: center;
+  gap: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box{
+    display:contents;
+  align-items: center;
+  gap: 60px;
+  }
+}
+
+.box1{
+padding: 21px 24px;
+width: 399px;
+height: 66px;
+background: #FFFFFF;
+border: 2px solid #D6D6D6;
+border-radius: 5px;
+order: 0;
+}
+
+.box2{
+padding: 21px 24px;
+width: 279px;
+height: 62px;
+background: #FFFFFF;
+border: 2px solid #D6D6D6;
+border-radius: 5px;
+order: 1;
+}
+
+.start{
+color: white;
+width: 176px;
+height: 62px;
+background: #430A58;
+border-radius: 5px;
+order: 2;
+}
+
+/* NAV AND FRONT SECTION 1 START */
+
+/* SECTION 2 START */
+
+/*-------users-------*/
+
+.container {
+  border-radius: 8.28694px;
+  filter:drop-shadow(0px 24.8608px 49.7216px rgba(25, 55, 102, 0.25));
+  text-align: center;
+}
+
+.feature h1,h2,h3,h4,h5,h6{
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.feature h5,h6 {
+  margin: 30px;
+}
+
+#users{
+  padding:50px 0;
+}
+.text-muted{
+  text-align: center;
+}
+
+.users-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap:40px;
+  margin-top: 50px;
+
+}
+.users-list div{
+  background:#ffff;
+  padding:40px;
+  font-size:13px;
+  font-weight:300;
+  border-radius:10px;
+  transition:background 0.5s ,transform 0.5s;
+}
+
+.users-list div i{
+  font-size:50px;
+  margin-bottom: 30px;
+}
+.users-list div h4{
+  font-size:30px;
+  font-weight:500;
+  margin-bottom: 15px;
+  color: #800080;
+}
+
+.users-list div:hover{
+  background:#800080;
+  transform:translateY(-10px);
+  color: #ffff;
+  
+}
+.users-list h4:hover{
+  color:#ffff;
+}
+
+/* SECTION 2 END */
+
+/*TEAM AND TESTIMONIES STYLE START*/
+
+.card {
+  --bs-card-border-radius: 15px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#team_card {
+  margin-bottom: 10%;
+}
+
+#team_image {
+  height: 396px !important;
+  background-color: #fde7ff;
+  border-radius: 15px !important;
+}
+
+.team_text {
+  color:#787D82;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  color: #929292;
+
+}
+
+.image_size {
+  height: 348px;
+  margin-top: 45px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#testimony_container {
+  background-color: #cab4d2;
+} 
+
+.testimony_card {
+  margin-top: 105px;
+  margin-bottom: 95px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.testimony_icon {
+  position: absolute;
+  top: -58px;
+  left: 35%;
+}
+
+.quote_icon {
+  padding-top: 80px;
+}
+
+.testimony_text {
+  padding: 0 7%;
+  padding-top: 0px;
+}
+
+.testimony_title {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 65px;
+}
+
+/*/*TEAM AND TESTIMONIES STYLE END*/
+
+/* FREQUENTLY ASKED QUESTION PAGE STYLE START */
+.faq-main {
+    width: 70%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.faq-title {
+    text-align: center;
+}
+
+.faq-title h4{
+    font-weight: 700;
+}
+
+.faq-title p {
+    color:#6E6E6E;
+}
+
+.accordion-body {
+    background-color: #EEE7F1;
+    border-radius: 0 0 10px 10px;
+}
+
+.accordion-button {
+    background-color: #EEE7F1;
+    border-radius: 10px;
+}
+
+.accordion-button:focus, 
+.accordion-button:active {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #FFF  !important;
+    background-color: #430A58 !important;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active  {
+    background-color: #430A58 !important;
+    color:#FFF !important;
+  }
+ 
+  .accordion-button:not(.collapsed)::after {
+    font-family: "FontAwesome";
+    content: "\f068";
+    background-image: none;
+    transform: none;
+  }
+  .accordion-button::after {
+    font-family: "FontAwesome";
+    content: "\f067";
+    background-image: none;
+  }
+
+  @media (max-width: 500px) {
+    .faq-main {
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px;
+    }
+  }
+
+/* FREQUENTLY ASKED QUESTION PAGE STYLE END */
+
+/* FOOTER PAGE STYLE START */
+.footer-main {
+  height: 400px;
+  background-color: #260631;
+  padding: 70px;
+}
+
+.footer-main h3, 
+.footer-main p {
+  color: white;
+  text-align: start;
+}
+
+.row #get-app {
+  flex-wrap: nowrap;
+  width: 40%;
+  margin-top: 8%;
+}
+
+.row #social-media {
+  flex-wrap: nowrap;
+  width: 15%;
+  margin-top: 8%;
+}
+
+.row #footer-link-1 {
+  width: 0%;
+  margin-left: 20%;
+}
+
+.footer-main a {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.footer-main a:hover {
+  text-decoration:underline;
+}
+
+#footer-link {
+  align-self: center;
+  margin-left: 5%;
+}
+
+@media (max-width: 926px) {
+
+  .footer-main {
+    height: 600px;
+  }
+
+  #footer-link {  
+    margin-left: 0%;
+  }
+
+  .footer-main a {
+    flex-basis: fit-content;
+  }
+
+  .row #social-media {
+    flex-wrap: nowrap;
+    width: 15%;
+    margin-top: 8%;
+  }
+
+  .row #get-app {
+    width: 40%;
+  }
+
+  .row a {
+    padding-right: 0%;
+    margin-top: 5%;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  
+  .footer-main {
+    height: 500px;
+  }
+
+  .row #social-media {
+    width: 20%;
+    margin-top: 8%;
+  }
+
+  .row #get-app {
+    width: 50%;
+  }
+
+  .row {
+    margin-right: 0%;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  
+  .footer-main {
+    height: 680px;
+  }
+  
+}
+
+/* FOOTER PAGE STYLE END */
